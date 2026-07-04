@@ -24,6 +24,8 @@ classDiagram
     Usuario "1" --> "1" Assinatura
     Usuario "1" --> "*" Perfil
     Perfil "1" --> "*" Avaliacao
-    Conteudo  "*" Episodio
+    Conteudo <|-- Filme
+    Conteudo <|-- Serie
+    Serie "1" --> "*" Episodio
     Conteudo "*" --> "*" Categoria
 ```
