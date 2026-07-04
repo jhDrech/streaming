@@ -21,6 +21,39 @@ JOINED — Conteudo é a classe pai, Filme e Serie são as subclasses. Cada uma 
 
 ```mermaid
 classDiagram
+    class Usuario {
+        Long id
+        String nome
+        String email
+    }
+    class Assinatura {
+        Long id
+        String plano
+    }
+    class Perfil {
+        Long id
+        String apelido
+    }
+    class Avaliacao {
+        Long id
+        Integer nota
+        String comentario
+    }
+    class Conteudo {
+        Long id
+        String titulo
+    }
+    class Filme
+    class Serie
+    class Episodio {
+        Long id
+        String titulo
+    }
+    class Categoria {
+        Long id
+        String nome
+    }
+
     Usuario "1" --> "1" Assinatura
     Usuario "1" --> "*" Perfil
     Perfil "1" --> "*" Avaliacao

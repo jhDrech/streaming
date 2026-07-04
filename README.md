@@ -19,6 +19,7 @@ JOINED — Conteudo é a classe pai, Filme e Serie são as subclasses. Cada uma 
 
 ## Diagrama Mermaid
 
+```mermaid
 classDiagram
     Usuario "1" --> "1" Assinatura
     Usuario "1" --> "*" Perfil
@@ -27,3 +28,4 @@ classDiagram
     Conteudo <|-- Serie
     Serie "1" --> "*" Episodio
     Conteudo "*" --> "*" Categoria
+```
